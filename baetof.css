@@ -2,13 +2,13 @@
 
 <style>
 @font-face{
-font-family:'soul-handwriting';
-src:url('https://cdn.jsdelivr.net/gh/baechu-rpg/ggny@b97c872601cd1263d95d54d06280ad5ecf6a80eb/soul-handwriting.ttf') format('truetype');}
+font-family:'Berosong-Regular';
+src:url('https://cdn.jsdelivr.net/gh/baechu-rpg/treeoflife@c63d639257d84a0ceb1a4c27e5f44d8905235853/Berosong-Regular.ttf') format('truetype');}
 
 .baetol-signature{
 --sig-width:350px;
 --sig-height:262px;
---title-font:'soul-handwriting',serif;
+--title-font:'Berosong-Regular',serif;
 --text-font:'Courier New',monospace;
 --title-size:15px;
 --text-size:5px;
