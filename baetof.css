@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/thpzqkqhf1pzqnx/game-icons.css">
+
+<style>
+@font-face{
+font-family:'soul-handwriting';
+src:url('https://cdn.jsdelivr.net/gh/baechu-rpg/ggny@b97c872601cd1263d95d54d06280ad5ecf6a80eb/soul-handwriting.ttf') format('truetype');}
+
+.baetol-signature{
+--sig-width:350px;
+--sig-height:262px;
+--title-font:'soul-handwriting',serif;
+--text-font:'Courier New',monospace;
+--title-size:28px;
+--text-size:5px;
+--text-color:#d9d4d4;
+--accent-color:#ffffff;
+--icon-size:42px;
+--glow:
+0 0 10px rgba(255,255,255,0.3),
+0 0 25px rgba(255,255,255,0.12);
+
+width:var(--sig-width);
+height:var(--sig-height);
+margin:auto;
+position:relative;
+overflow:hidden;
+font-family:var(--text-font);
+color:var(--text-color);
+background:
+url('https://i.imgur.com/7nm978V.jpeg')
+center/cover
+no-repeat;}
+
+.baetol-signature::before{
+content:"";
+position:absolute;
+inset:0;
+background:var(--overlay);
+z-index:1;}
+
+.baetol-signature > *{
+position:relative;
+z-index:2;}
+
+.baetol-signature-title{
+position:absolute;
+top:50%;left:50%;
+transform:translate(-50%,-50%);
+width:100%;
+text-align:center;
+font-family:var(--title-font);
+font-size:var(--title-size);
+line-height:.8em;
+letter-spacing:3px;
+color:var(--accent-color);
+text-shadow:var(--glow);
+animation:baetolFlick 3s infinite linear;}
+
+.baetol-signature-title span{
+display:block;
+margin-bottom:8px;
+font-family:var(--text-font);
+font-size:5px;
+letter-spacing:4px;
+text-transform:uppercase;}
+
+.baetol-signature-bottom{
+position:absolute;
+bottom:18px;
+right:20px;
+width:140px;
+text-align:right;}
+
+.baetol-signature-icon{
+margin-bottom:8px;
+opacity:.8;}
+
+.baetol-signature-icon i{
+font-size:calc(var(--icon-size) + 4px);}
+
+.baetol-signature-text{
+font-size:var(--text-size);
+line-height:1.7em;
+letter-spacing:2px;
+text-transform:uppercase;}
+
+@keyframes baetolFlick{
+0%{opacity:1;}
+4%{opacity:.3;}
+5%{opacity:1;}
+10%{opacity:.6;}
+11%{opacity:1;}
+45%{opacity:1;}
+46%{opacity:.2;}
+47%{opacity:1;}
+100%{opacity:1;}}
+
+</style>
